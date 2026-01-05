@@ -12,6 +12,9 @@ app.get('/api/data', (req, res) => {
   res.send('data~');
 });
 
+// 쉬프트 + 방향키 => 코드 선택
+// end키 => 끝까지 코드 선택
+// alt + 쉬프트 + 방향키 아래 => 코드 복사
 app.get('/get_test', (req, res) => {
   res.send('test');
 });

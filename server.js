@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const PORT = 4000; // 어디방
+const PORT = 4000; // 어디방ZZ
 
 // GET / 요청이 오면
 app.get('/', (req, res) => {

@@ -3,9 +3,9 @@ import mysql from 'mysql2/promise';
 export const db = await mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: '1234',
+  password: 'sujin0703!',
   port: 3306,
-  database: 'elice', // 실제 DB명으로 바꿔
+  database: 'elice', // DBeaver에 있는 실제 DB명
   waitForConnections: true,
   connectionLimit: 10,
 });

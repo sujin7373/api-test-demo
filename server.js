@@ -29,7 +29,7 @@ app.get('/ping', async (req, res) => {
  * 회원 전체 조회 (SELECT)
  */
 app.get('/users', async (req, res) => {
-  const [rows] = await db.query('SELECT * FROM users');
+  const [rows] = await db.query('SELECT * FROM users'); // SQL 스트럭처드 쿼리 랭귀지
   res.json(rows);
 });
 
@@ -59,8 +59,8 @@ app.post('/users', async (req, res) => {
   const { username, password } = req.body;
 
   await db.query('INSERT INTO users (username, password) VALUES (?, ?)', [
-    username, // pkok976
-    password, // aktlakfh1!
+    username, // json 형식으로 Body에 전달
+    password, 
   ]);
 
   res.json({ message: '회원가입 완료' });
